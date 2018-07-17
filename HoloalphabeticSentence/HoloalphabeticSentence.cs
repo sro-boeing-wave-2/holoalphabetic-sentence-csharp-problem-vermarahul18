@@ -8,7 +8,18 @@ namespace HoloalphabeticSentence
         // Write the logic to determine whether the input string is a HoloalphabeticSentence or not
         public static bool IsHoloalphabeticSentence(string input, string alphabets = "abcdefghijklmnopqrstuvwxyz")
         {
-            return false;
+            Boolean val = true;
+            for (int i = 0; i < alphabets.Length; i++) {
+                if (input.ToLower().Contains(alphabets[i]))
+                {
+                    val = true;
+                }
+                else {
+                    val = false;
+                    break;
+                }
+            }
+            return val;
         }
     }
 }
