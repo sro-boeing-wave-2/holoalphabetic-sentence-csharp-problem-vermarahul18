@@ -17,6 +17,7 @@ namespace HoloalphabeticSentence
                 else  {
                     val = false;
                     break;
+                    //adding a comment;
                 }
             }
             return val;
