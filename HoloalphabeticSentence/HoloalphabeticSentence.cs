@@ -14,7 +14,7 @@ namespace HoloalphabeticSentence
                 {
                     val = true;
                 }
-                else {
+                else  {
                     val = false;
                     break;
                 }
